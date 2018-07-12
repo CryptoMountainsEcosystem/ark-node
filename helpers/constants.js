@@ -31,16 +31,16 @@ module.exports = {
 	requestLength: 104,
 	rewards: {
 		milestones: [
-			200000000, // Initial Reward
-			200000000, // Milestone 1
-			200000000, // Milestone 2
-			200000000, // Milestone 3
-			200000000  // Milestone 4
+			5000000, // Initial Reward
+			5000000, // Milestone 1
+			5000000, // Milestone 2
+			5000000, // Milestone 3
+			5000000  // Milestone 4
 		],
 		offset: 75600,   // Start rewards at block, ie 7 days after net start
 		distance: 3000000, // Distance between each milestone
 	},
 	signatureLength: 196,
-	totalAmount: 1000000000000000000,
+	totalAmount: 100000000000000000,
 	unconfirmedTransactionTimeOut: 10800 // 1080 blocks
 };
