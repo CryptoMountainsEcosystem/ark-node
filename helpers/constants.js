@@ -9,9 +9,9 @@ module.exports = {
 	epochTime: new Date(Date.UTC(2017, 2, 21, 13, 0, 0, 0)),
 	fees:{
 		send: 1,
-		vote: 10000000000000,
+		vote: 100000000000000,
 		secondsignature: 500000000,
-		delegate: 10000000000000,
+		delegate: 100000000000000,
 		multisignature: 500000000
 	},
 	feeStart: 1,
