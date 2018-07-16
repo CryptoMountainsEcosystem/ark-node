@@ -9,7 +9,7 @@ module.exports = {
 	epochTime: new Date(Date.UTC(2017, 2, 21, 13, 0, 0, 0)),
 	fees:{
 		send: 0,
-		vote: 100000000000000,
+		vote: 10000000000000000000,
 		secondsignature: 500000000,
 		delegate: 100000000000000,
 		multisignature: 500000000
@@ -37,7 +37,7 @@ module.exports = {
 			5000000, // Milestone 3
 			5000000  // Milestone 4
 		],
-		offset: 1,   // Start rewards at block, ie 7 days after net start
+		offset: 100,   // Start rewards at block, ie 7 days after net start
 		distance: 3000000, // Distance between each milestone
 	},
 	signatureLength: 196,
