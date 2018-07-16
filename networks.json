@@ -1,4 +1,4 @@
-﻿{
+{
   "ark": {
     "messagePrefix": "ARK message:\n",
     "bip32": {
@@ -52,20 +52,6 @@
       "token":"DARK",
       "symbol":"DѦ",
       "explorer":"http://dexplorer.ark.io"
-    }
-   },
-  "cmt": {
-    "messagePrefix": "CMT message:\n",
-    "bip32": {
-      "public": 70617039,
-      "private": 70615956
-    },
-    "pubKeyHash": 28,
-    "wif": 187,
-    "client": {
-      "token":"CMT",
-      "symbol":"CMT",
-      "explorer":"http://explorer.cryptomountains.com"
     }
   }
 }

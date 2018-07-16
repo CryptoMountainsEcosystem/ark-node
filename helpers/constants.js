@@ -8,13 +8,13 @@ module.exports = {
 	confirmationLength: 77,
 	epochTime: new Date(Date.UTC(2017, 2, 21, 13, 0, 0, 0)),
 	fees:{
-		send: 1,
+		send: 0,
 		vote: 10000000000000000000,
 		secondsignature: 500000000,
 		delegate: 100000000000000,
 		multisignature: 500000000
 	},
-	feeStart: 1,
+	feeStart: 0,
 	feeStartVolume: 10000 * 100000000,
 	fixedPoint : Math.pow(10, 8),
 	forgingTimeOut: 3060, // 102 blocks / 2 rounds
