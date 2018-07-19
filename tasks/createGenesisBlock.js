@@ -49,7 +49,7 @@ var seed_peers = [
 ];
 
 // default db named
-var db_name = "ark_" + network_name;
+var db_name = "ark_cmt";
 
 // optional premined accounts. Example :
 // [
@@ -66,7 +66,7 @@ else {
 }
 
 // Total of premined token in satoshi. The premined accounts will be substracted to this
-var totalpremine = 100000000000000000;
+var totalpremine = 100000000000;
 
 
 // config file that will be tuned and exported
@@ -365,11 +365,6 @@ var genesisBlock = create({
 });
 
 config.nethash = genesisBlock.payloadHash;
-
-// create directory
-if (!fs.existsSync(output_dir)) {
-    fs.mkdirSync(output_dir);
-}
 
 fs.writeFile(output_dir+"/genesisBlock."+config.network+".json",JSON.stringify(genesisBlock, null, 2));
 fs.writeFile(output_dir+"/config."+config.network+".json",JSON.stringify(config, null, 2));

@@ -1,22 +1,22 @@
 'use strict';
 
 module.exports = {
-	activeDelegates: 21,
+	activeDelegates: 51,
 	maximumVotes: 1,
 	addressLength: 208,
 	blockHeaderLength: 248,
 	confirmationLength: 77,
 	epochTime: new Date(Date.UTC(2017, 2, 21, 13, 0, 0, 0)),
 	fees:{
-		send: 0,
-		vote: 10000000000000,
-		secondsignature: 500000000,
-		delegate: 10000000000000,
-		multisignature: 500000000
+		send: 1,
+		vote: 100000000,
+		secondsignature: 500,
+		delegate: 100000000,
+		multisignature: 500
 	},
 	feeStart: 1,
-	feeStartVolume: 10000 * 100000000,
-	fixedPoint : Math.pow(10, 8),
+	feeStartVolume: 10000 * 100,
+	fixedPoint : Math.pow(10, 2),
 	forgingTimeOut: 3060, // 102 blocks / 2 rounds
 	maxAddressesLength: 208 * 128,
 	maxAmount: 100000000,
@@ -31,16 +31,16 @@ module.exports = {
 	requestLength: 104,
 	rewards: {
 		milestones: [
-			5000000, // Initial Reward
-			5000000, // Milestone 1
-			5000000, // Milestone 2
-			5000000, // Milestone 3
-			5000000  // Milestone 4
+			5, // Initial Reward
+			5, // Milestone 1
+			5, // Milestone 2
+			5, // Milestone 3
+			5  // Milestone 4
 		],
-		offset: 5000,   // Start rewards at block, ie 7 days after net start
+		offset: 1,   // Start rewards at block, ie 7 days after net start
 		distance: 3000000, // Distance between each milestone
 	},
 	signatureLength: 196,
-	totalAmount: 100000000000000000,
+	totalAmount: 100000000000,
 	unconfirmedTransactionTimeOut: 10800 // 1080 blocks
 };

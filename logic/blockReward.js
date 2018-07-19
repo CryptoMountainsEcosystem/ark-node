@@ -63,14 +63,14 @@ BlockReward.prototype.calcReward = function (height) {
 BlockReward.prototype.calcSupply = function (height) {
 	height        = __private.parseHeight(height);
 	var milestone = this.calcMilestone(height);
-	var supply    = constants.totalAmount / Math.pow(10,8);
+	var supply    = constants.totalAmount / Math.pow(10,2);
 	var rewards   = [];
 
 	var amount = 0, multiplier = 0;
 
 	for (var i = 0; i < this.milestones.length; i++) {
 		if (milestone >= i) {
-			multiplier = (this.milestones[i] / Math.pow(10,8));
+			multiplier = (this.milestones[i] / Math.pow(10,2));
 
 			if (height < this.rewardOffset) {
 				break; // Rewards not started yet
