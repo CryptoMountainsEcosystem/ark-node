@@ -304,7 +304,7 @@ Transaction.prototype.checkBalance = function (amount, balance, trs, sender) {
 		exceeded: exceeded,
 		error: exceeded ? [
 			'Account does not have enough ARK:', sender.address,
-			'balance:', bignum(sender[balance].toString() || '0').div(Math.pow(10,8))
+			'balance:', bignum(sender[balance].toString() || '0').div(Math.pow(10,2))
 		].join(' ') : null
 	};
 };
