@@ -1,16 +1,16 @@
-![ARK-NODE](https://i.imgur.com/ej8GvMn.png)
-Ark is a next generation crypto-currency and decentralized application platform, written entirely in JavaScript. For more information please refer to our website: https://ark.io/.
+
+CMT is a next generation crypto-currency and decentralized application platform, written entirely in JavaScript. For more information please refer to our website: https://CMT.io/.
 
 This version is still beta, use at your own risks
 
 ## Install, Upgrade etc...
 You need to provision a linux (ubuntu tested) server (digital ocean, vultur or other).
 
-Then use the excellent ark-commander script
+Then use the excellent CMT-commander script
 ```
 cd
-wget https://ark.io/ARKcommander.sh
-bash ARKcommander.sh
+wget https://CMT.io/CMTcommander.sh
+bash CMTcommander.sh
 ```
 
 For developers, please read below in section "Developer Installation"
@@ -56,7 +56,7 @@ To start the Vagrant environment:
 vagrant up
 ```
 
-All dependency installation and configuration for the dev environment is in the `VagrantFile`. After installation, ark-node will automatically start and log all output to the console.
+All dependency installation and configuration for the dev environment is in the `VagrantFile`. After installation, CMT-node will automatically start and log all output to the console.
 
 To log into the Vagrant environment:
 
@@ -87,7 +87,7 @@ Install PostgreSQL (min version: 9.5.2)
 ```
 sudo apt-get install -y postgresql postgresql-contrib
 sudo -u postgres createuser --createdb --password $USER
-createdb ark_test
+createdb CMT_test
 ```
 
 Install Node.js (tested with version 6.9.2, but any recent LTS release should do):
@@ -106,8 +106,8 @@ sudo npm install grunt-cli -g
 
 Clone this repository
 ```
-git clone https://github.com/arkecosystem/ark-node.git
-cd ark-node
+git clone https://github.com/CMTecosystem/CMT-node.git
+cd CMT-node
 ```
 
 Install node modules:
@@ -117,21 +117,21 @@ npm install
 ```
 
 ## Launch
-To launch Ark on testnet:
+To launch CMT on testnet:
 ```
-createdb ark_testnet
+createdb CMT_testnet
 npm run start:testnet
 ```
 
-To launch Ark on devtnet:
+To launch CMT on devtnet:
 ```
-createdb ark_devnet
+createdb CMT_devnet
 npm run start:devnet
 ```
 
-To launch Ark on mainnet (when launched):
+To launch CMT on mainnet (when launched):
 ```
-createdb ark_mainnet
+createdb CMT_mainnet
 npm run start:mainnet
 ```
 
@@ -162,7 +162,7 @@ Obviously you can hack away tasks/createGenesisBlock.js for your own custom use.
 
 You can the start with your own chain on a single node (all delegates will forge on your single node) using:
 ```
-createdb ark_newtest
+createdb CMT_newtest
 npm run start:newtest
 ```
 
@@ -170,7 +170,7 @@ Then you can distribute the config.json (without the delegates secrets inside, a
 
 
 ## Tests
-Load git submodule [ark-js](https://github.com/arkecosystem/ark-js):
+Load git submodule [CMT-js](https://github.com/CMTecosystem/CMT-js):
 ```
 git submodule init
 git submodule update
@@ -203,7 +203,7 @@ peace vanish bleak box tuna woman rally manage undo royal lucky since
 
 
 ## Authors
-- FX Thoorens <fx.thoorens@ark.io>
+- FX Thoorens <fx.thoorens@CMT.io>
 - Boris Povod <boris@crypti.me>
 - Pavel Nekrasov <landgraf.paul@gmail.com>
 - Sebastian Stupurac <stupurac.sebastian@gmail.com>
@@ -213,7 +213,7 @@ peace vanish bleak box tuna woman rally manage undo royal lucky since
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2017 Ark
+Copyright (c) 2016-2017 CMT
 Copyright (c) 2016 Lisk
 Copyright (c) 2014-2015 Crypti
 
