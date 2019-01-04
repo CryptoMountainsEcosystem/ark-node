@@ -203,17 +203,14 @@ peace vanish bleak box tuna woman rally manage undo royal lucky since
 
 
 ## Authors
-- FX Thoorens <fx.thoorens@CMT.io>
-- Boris Povod <boris@crypti.me>
-- Pavel Nekrasov <landgraf.paul@gmail.com>
-- Sebastian Stupurac <stupurac.sebastian@gmail.com>
-- Oliver Beddows <oliver@lisk.io>
+- Lorenzo Caruso <lorenzo.caruso@outlook.com>
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2017 CMT
+Copyright (c) 2018 CryptoMountains
+Copyright (c) 2016-2017 Ark
 Copyright (c) 2016 Lisk
 Copyright (c) 2014-2015 Crypti
 
